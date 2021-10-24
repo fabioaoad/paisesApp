@@ -1,4 +1,4 @@
-<table class="table table-hover">
+<table class="table table-hover animated animate__fadeIn">
     <thead>
         <tr>
             <th>#</th>
@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let pais of paises; let i = index">
+        <tr *ngFor="let pais of paises; let i = index" class="animate__animated animate__fadeIn animate__fadeInUp">
             <td>{{ i + 1 }}</td>
             <td>
                 <img class="small-flag" [src]="pais.flags.png">
